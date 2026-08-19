@@ -1,5 +1,5 @@
 local config = loadstring(game:HttpGet(
-    "https://raw.githubusercontent.com/faxhubscripts/Bid-for-anime/main/Config.lua"
+    "https://raw.githubusercontent.com/faxhubscripts/Bidforanimefury/main/Config.lua"
 ))()
 
 if not config.Enabled then
@@ -7,5 +7,5 @@ if not config.Enabled then
 end
 
 loadstring(game:HttpGet(
-    "https://raw.githubusercontent.com/faxhubscripts/Bid-for-anime/main/Main.lua"
+    "https://raw.githubusercontent.com/faxhubscripts/Bidforanimefury/main/Bidforanimef"
 ))()
