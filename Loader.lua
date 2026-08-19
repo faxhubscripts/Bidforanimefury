@@ -1,15 +1,17 @@
-local url = "https://raw.githubusercontent.com/faxhubscripts/Bidforanimef/main/Config.lua?" .. tostring(math.random(1, 999999999))
-
-local response = game:HttpGet(url)
-
-print("CONFIG RAW:")
-print(response)
-
-local config = loadstring(response)()
+local config = loadstring(game:HttpGet(
+    "https://raw.githubusercontent.com/faxhubscripts/Bidforanimefury/main/Config.lua?t=" .. tostring(os.time())
+))()
 
 print("ENABLED:", config.Enabled)
+print("TYPE:", typeof(config.Enabled))
 
 if config.Enabled ~= true then
     print("SCRIPT DISABLED")
     return
 end
+
+print("Loading script")
+
+loadstring(game:HttpGet(
+    "https://raw.githubusercontent.com/faxhubscripts/Bidforanimefury/main/Bidforanimef?t=" .. tostring(os.time())
+))()
